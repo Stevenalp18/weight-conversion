@@ -8,22 +8,59 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- hey there i am trying to get my github to work -->
-
-    <h1>Unit Conversion</h1>
-    <div class="container">
-        <div>
-            <h2>(Pounds) lb</h2>
-            <div id="lb" class="conversion"></div>
-        </div>
-        <div>
-            <h2>(Kilogram) kg</h2>
-            <div id="kg" class="conversion"></div>
-        </div>
-        <div>
-            <h2>(grams) g</h2>
-            <div id="g" class="conversion"></div>
-        </div>
+    <div class="top-div">
+        <h1>Weight Conversion Calculator</h1>
     </div>
-</body>
+    <div class="container">
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="enter number here">
+                        </td>
+                        <td>
+                            <select name="measurement" id="measurement">
+                                <option value="grams">Grams (g)</option>
+                                <option value="pounds">Pounds (lb)</option>
+                                <option value="kilogram">Kilogram (kg)</option>
+                                <option value="ounces">Ounces (oz)</option>
+                                <option value="milligram">Milligram (mg)</option>
+                                <option value="metric-ton">Metric Ton (mt)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>Convert</button>
+                        </td>
+                        <td>
+                            <button>Reset</button>
+                        </td>
+                     </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="grams"></label>
+                            <input name="grams" id="grams" type="text" placeholder="Grams (g)">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body> 
 </html>
