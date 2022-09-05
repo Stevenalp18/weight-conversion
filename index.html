@@ -12,7 +12,6 @@
         <h1>Weight Conversion Calculator</h1>
     </div>
     <div class="container">
-        <form>
             <table>
                 <thead>
                     <tr>
@@ -32,34 +31,52 @@
                     </tr>
                     <tr>
                         <td>
-                            <button>Convert</button>
+                            <button id="convert-btn">Convert</button>
                         </td>
                         <td>
-                            <button>Reset</button>
+                            <button id="reset-btn">Reset</button>
                         </td>
                      </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <label for="grams"></label>
-                            <input name="grams" id="grams" type="text" placeholder="Grams (g)">
+                            <label for="grams">
+                                <input name ="grams" id="grams" placeholder="Grams (g)" type="text">
+                            </label>
                         </td>
                         <td>
-
+                            <label for="pounds">
+                                <input name="pounds" id="pounds" placeholder="Pounds (lb)" type="text">
+                            </label>
                         </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <label for="kilogram">
+                                <input id="kilogram" name="kilogram" placeholder="Kilogram (kg)" type="text">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="ounces">
+                                <input id="ounces" name="ounces" placeholder="Ounces (oz)" type="text">
+                            </label>
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <label for="milligram">
+                                <input id="milligram" name="milligram" placeholder="Milligram (mg)" type="text">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="metric-ton">
+                                <input id="metric-ton" name="metric-ton" placeholder="Metric Ton (mt)" type="text">
+                            </label>
+                        </td>
                     </tr>
                 </tbody>
             </table>
-        </form>
     </div>
     <script src="script.js" type="text/javascript"></script>
 </body> 
