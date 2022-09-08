@@ -1,22 +1,22 @@
 // DOM Selectors
 const convertBtn = document.getElementById('convert-btn');
 const resetBtn = document.getElementById('reset-btn');
-const intInput = document.querySelector('int-input');
+const intInput = document.getElementById('int_input');
 const allInput = document.querySelectorAll('input');
-const grams = document.getElementById('grams');
-const pounds = document.getElementById('pounds');
-const kilogram = document.getElementById('kilogram');
-const ounces = document.getElementById('ounces');
-const milligram = document.getElementById('milligram');
-const metricTon = document.getElementById('metric-ton');
+let grams = document.getElementById('grams');
+let pounds = document.getElementById('pounds');
+let kilogram = document.getElementById('kilogram');
+let ounces = document.getElementById('ounces');
+let milligram = document.getElementById('milligram');
+let metricTon = document.getElementById('metric-ton');
 
 const select  = document.getElementById('measurement');
-const g_option = document.getElementById('measurement').value = 'grams';
-const lb_option = document.getElementById('measurement').value = 'pounds';
-const kg_option = document.getElementById('measurement').value = 'kilogram';
-const oz_option = document.getElementById('measurement').value = 'ounces';
-const mg_option = document.getElementById('measurement').value = 'milligram';
-const mt_option = document.getElementById('measurement').value = 'metric-ton';
+// const g_option = document.getElementById('measurement').value = 'grams';
+// const lb_option = document.getElementById('measurement').value = 'pounds';
+// const kg_option = document.getElementById('measurement').value = 'kilogram';
+// const oz_option = document.getElementById('measurement').value = 'ounces';
+// const mg_option = document.getElementById('measurement').value = 'milligram';
+// const mt_option = document.getElementById('measurement').value = 'metric-ton';
 
 resetBtn.addEventListener('click', () => {
    allInput.forEach( (input) => {
@@ -25,7 +25,14 @@ resetBtn.addEventListener('click', () => {
 })
 
 convertBtn.addEventListener('click', () =>{
-   console.log(intInput);
+   if(select.value === 'grams' && intInput.value > 0){
+      g_to_g();
+      g_to_lb();
+      g_to_kg();
+      g_to_oz();
+      g_to_mg();
+      g_to_mt();
+   }else (alert('no bueno, still working on it, try grams conversions though'))
 })
 
 
@@ -35,27 +42,27 @@ convertBtn.addEventListener('click', () =>{
 
 // grams conversions
 function g_to_g(){
-   return (grams + ' g');
+   return grams.value = `${intInput.value} g`;
 }
 
 function g_to_lb(){
-   return ((grams * 0.0022) + ' lb');
+   return pounds.value = `${intInput.value * 0.0022} lb`;
 }
 
 function g_to_kg(){
-   return ((grams / 1000 ) + ' kg');
+   return kilogram.value = `${intInput.value / 1000} kg`;
 }
 
 function g_to_oz(){
-   return ((grams / 28.35) + ' oz');
+   return ounces.value = `${intInput.value / 28.35} oz`;
 }
 
 function g_to_mg(){
-   return ((grams * 1000)  + ' mg');
+   return milligram.value = `${intInput.value * 1000}  mg`;
 }
 
 function g_to_mt(){
-   return ((grams * .000001) + ' mt');
+   return metricTon.value = `${intInput.value * .000001} mt`
 }
 
 // pounds conversions
