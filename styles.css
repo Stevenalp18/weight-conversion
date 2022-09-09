@@ -18,12 +18,20 @@ h1{
 
 .container{
     border: 1px solid black;
+    border-radius: 15px;
     margin: auto;
-    width: 85vw;
+    width: 50vw;
     height: auto;
     position: relative;
     top: 12vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 5vh 1vw;
+}
+
+input, button, select, label{
+    width: 80%;
+    padding: .5rem;
+    margin: 1vh 2.5vw;
 }
