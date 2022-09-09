@@ -13,7 +13,9 @@ h1{
     text-align: center;
     margin: auto;
     padding: 1rem;
-    width: 40vw;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
@@ -34,6 +36,27 @@ input, button, select, label{
     width: 80%;
     padding: .5rem;
     margin: 1vh 2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+input, select{
+    background-color: #C9E5ED;
+}
+
+button{
+    background-color: #cc6d9d;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+button:hover, select:hover{
+    cursor: pointer;
+}
+
+.container{
+    background-color: #c1d0da98;
 }
 
 @media (max-width: 1000px){
@@ -41,7 +64,7 @@ input, button, select, label{
         width: 90%;
     }
     
-    button{
+    button, select{
         padding: .5rem;
         border-radius: 15px;
     }
