@@ -35,3 +35,9 @@ input, button, select, label{
     padding: .5rem;
     margin: 1vh 2.5vw;
 }
+
+@media (max-width: 1000px){
+    .container{
+        width: 90%;
+    }
+}
