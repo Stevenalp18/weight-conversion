@@ -1,3 +1,3 @@
 # weight-conversion
 
-Hi there, This is currently a work in progress but will end up taking a unit of measurement and the given weight and return different values for different units of measurements.
+I Finished my Weight Conversion, you are able to put in a number and calculate and then it gets converted to 6 measurements simultaneously, g, mg, kg, lb, oz, and mt.
