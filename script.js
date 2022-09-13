@@ -123,7 +123,7 @@ function g_to_lb(){
 }
 
 function g_to_kg(){
-   return kilogram.value = `${intInput.value / 1000} kg`;
+   return kilogram.value = intInput.value / 1000;
 }
 
 function g_to_oz(){
